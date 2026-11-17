@@ -6,10 +6,10 @@ User: Admin console > Directory > Users > Add new user
 Group: Admin console > Directory > Groups > Create group  
 Unit: Admin console > Directory > Organizational units > Create organizational unit  
 Role: Admin console > Account > Admin roles > Assign users  
-Reset: Not verified in the console  
+Reset: Admin console > Directory > Users > Select user > Reset password  
 Rollback: Admin console > Account > Admin roles > Unassign users
 
-**Verification note:** The paths above for User, Group, Unit, Role and Rollback are taken from my change log, not independently confirmed against the live console. Reset still needs verification.
+**Verification note:** Verification note: The Reset path is a reference path, not personally verified. I did not access the reset screen. The other paths are recorded from my change log and still require confirmation against the live console.
 
 ## AI receipts
 
