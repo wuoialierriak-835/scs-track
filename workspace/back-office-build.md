@@ -9,7 +9,7 @@
 | 4 | What problem does a paper notebook cause right now? | Hard to tell when stock hits the reorder level (5 units) or total monthly sales quickly. |
 | 5 | Can you keep the sheet updated every day without slowing down customers? | Yes, logging a row takes under 15 seconds using the item dropdowns. |
 
-Verdict: Sheets.  Pattern: Stock and Sales Ledger.  Because: You already have a smartphone at the counter and only need fast daily stock counts and automatic reorder alerts without doing manual sums every evening.
+Verdict: Sheets.  Pattern: inventory.  Because: You already have a smartphone at the counter and only need fast daily stock counts and automatic reorder alerts without doing manual sums every evening.
 
 ## Validation
 | Column | Rule | The garbage I typed | Refused? |
@@ -26,10 +26,10 @@ Verdict: Sheets.  Pattern: Stock and Sales Ledger.  Because: You already have a 
 | Records!F2:F1000 (AMOUNT formulas) | Owner only | Restriction (only owner can edit) | Yes (`Records!A2:E1000` entry columns remain open) |
 
 ## AI Receipts
-| Ask (Column Headings Only) | Formula Suggested | Used? |
-|---|---|---|
-| `DATE, ITEM, DIRECTION, QUANTITY, PRICE, AMOUNT` — current stock per item | `=SUMIFS(RECORDS!D:D, RECORDS!B:B, A12, RECORDS!C:C, "IN") - SUMIFS(RECORDS!D:D, RECORDS!B:B, A12, RECORDS!C:C, "OUT")` | Yes |
-| `DATE, ITEM, DIRECTION, QUANTITY, PRICE, AMOUNT` — current month units and sales out | `=SUMIFS(RECORDS!F:F, RECORDS!C:C, "OUT", RECORDS!A:A, ">="&DATE(YEAR(TODAY()),MONTH(TODAY()),1), RECORDS!A:A, "<="&EOMONTH(TODAY(),0))` | Yes |
+| The ask | The formula | What I changed | The hand check |
+|---|---|---|---|
+| `DATE, ITEM, DIRECTION, QUANTITY, PRICE, AMOUNT` — current stock per item | `=SUMIFS(RECORDS!D:D, RECORDS!B:B, A12, RECORDS!C:C, "IN") - SUMIFS(RECORDS!D:D, RECORDS!B:B, A12, RECORDS!C:C, "OUT")` | Changed `RECORD!` to `RECORDS!` and trimmed trailing spaces in `ITEM` | Row 1 (`Dashboard!B12`, Sugar stock = 6) |
+| `DATE, ITEM, DIRECTION, QUANTITY, PRICE, AMOUNT` — current month sales out | `=SUMIFS(RECORDS!F:F, RECORDS!C:C, "OUT", RECORDS!A:A, ">="&DATE(YEAR(TODAY()),MONTH(TODAY()),1), RECORDS!A:A, "<="&EOMONTH(TODAY(),0))` | Updated sheet name to `RECORDS!` and matched column `F:F` for amount | Row 3 (`Dashboard!B5`, October sales out = 1200) |
 
 ## Break the books
 | # | The attack | What I said would happen | What happened | Held or the fix |
