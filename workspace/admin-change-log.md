@@ -26,3 +26,21 @@ none
 ## Audit match
 
 You, Now
+
+## SCS3.2 -- sharing, security, backups, offboarding (2026-11-18)
+
+Practice OU only.  Every row written before the click; the check column filled after it.
+
+| # | Time | What I am about to change (console path) | Who or what it affects | Why, in one line | How I checked it | Undo |
+|---|---|---|---|---|---|---|
+| 1 | 09:05 | Drive and Docs > Sharing settings (practice OU): sharing outside domain set to OFF | Everyone in practice OU | Keep shop files inside the business | Partner blocked when trying to share with outside address | Set back to ON |
+| 2 | 09:10 | Drive and Docs > Sharing settings (practice OU): link sharing default set to Restricted | Everyone in practice OU | Prevent accidental public link sharing | New files default to Restricted | Set back to Anyone with link |
+| 3 | 09:15 | Drive and Docs > Sharing settings (practice OU): allow shared drive creation | Everyone in practice OU | Enable team-owned storage in Shop files | New Shared Drive created successfully | Disable shared drive creation |
+| 4 | 09:25 | Drive (new starter): changed customer-list General access to Restricted | customer-list | Close open public link | Partner's private window test showed You need access | Set back to Anyone with link |
+| 5 | 09:30 | Drive (new starter): created Shared Drive Shop files, added manager, moved 3 business files | Shop files | Move business records out of personal My Drive | 3 files visible in Shop files under both managers | Move files back to My Drive |
+| 6 | 10:05 | Security > Authentication > 2-step verification (practice OU): allow users to turn on 2-step | Everyone in practice OU | Enable multi-factor authentication | Option available in user security settings | Disallow 2-step verification |
+| 7 | 10:10 | Security > Authentication > 2-step verification (practice OU): set new user enrolment period to 7 days | Everyone in practice OU | Give new accounts time to enrol before enforcement | Enrolment window saved on practice OU | Clear enrolment period |
+| 8 | 10:15 | Security > Authentication > 2-step verification (practice OU): enforce 2-step from today | Everyone in practice OU | Require 2-step across the practice OU | New starter enrolled with authenticator app | Turn enforcement off |
+| 9 | 10:25 | Devices > Mobile and endpoints > Settings (practice OU): basic management on, screen lock required | Everyone in practice OU | Protect devices accessing shop data | Settings saved for practice OU | Disable screen lock requirement |
+| 10 | 11:30 | Directory > Users (practice OU): transferred Drive ownership to manager and suspended leaver account | Leaver account | Offboard leaver cleanly without losing files | Users export shows leaver Suspended; Drive log shows ownership transfer | Unsuspend leaver account |
+| 11 | 15:30 | Directory > Users (practice OU): unsuspended leaver account (reset OU for next session) | Leaver account | Leave practice OU whole for SCS4.4 audit drills | Newest users export shows all 3 users Active | Suspend leaver account |
