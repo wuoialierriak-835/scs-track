@@ -1,5 +1,6 @@
 /**
  * AI-assisted, directed by wuoi
+ * @OnlyCurrentDoc
  */
 function checkStock() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
