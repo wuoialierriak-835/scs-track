@@ -77,3 +77,14 @@ Label: AI-assisted, directed by wuoi
 | 111 | checkCell.setValue("OK"); | writes OK in column D when quantity is valid | sequence |
 | 112 | } else { | runs the fallback branch when quantity is invalid | condition |
 | 113 | checkCell.setValue("INVALID ENTRY"); | writes INVALID ENTRY in column D when quantity is invalid | sequence |
+| 10 | } // Close missing Dashboard check | ends the missing Dashboard if-block | sequence |
+| 20 | } // Close missing Reminders check | ends the missing Reminders if-block | sequence |
+| 28 | } // Close lowStockItems check | ends the lowStockItems if-block | sequence |
+| 29 | } // Close checkStock function | ends the checkStock function | sequence |
+| 36 | } // Close missing Records check | ends the missing Records if-block | sequence |
+| 42 | } // Close empty Records check | ends the empty Records if-block | sequence |
+| 79 | } // Close missing Monthly Report check | ends the missing Monthly Report if-block | sequence |
+| 82 | } // Close generateMonthlyReport function | ends the generateMonthlyReport function | sequence |
+| 106 | } // Close empty date check | ends the empty date if-block | sequence |
+| 114 | } // Close validation branch | ends the valid/invalid quantity if-else block | sequence |
+| 115 | } // Close onEdit function | ends the onEdit trigger function | sequence |
