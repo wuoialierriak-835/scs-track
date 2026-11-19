@@ -12,7 +12,6 @@ Write Google Apps Script functions for Google Sheets with a comment on every lin
 The draft returned all three functions cleanly. By hand, I added the attribution header and `/** @OnlyCurrentDoc */` at line 3 so the script only requests permission to access the active spreadsheet rather than all spreadsheets in Drive.
 
 ## Iteration -- only if the draft missed a line of the spec (which line)
-None — the initial draft covered all three spec functions; only the @OnlyCurrentDoc scope annotation was added by hand.
 
 ## The debug move -- one real error: the message pasted whole, what my trace said first, what the tool said
 Error: `TypeError: Cannot read properties of undefined (reading 'range')` when clicking Run on `onEdit` in the editor. My trace showed `e` is undefined unless triggered by an actual spreadsheet cell edit. Confirmed `onEdit(e)` must be tested by editing a cell in the INTAKE tab rather than pressing Run.
