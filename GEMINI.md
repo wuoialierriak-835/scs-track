@@ -11,3 +11,6 @@ Node.js (`v22.22.1`) CLI tools in `workspace/stock-tools/` (zero external npm pa
 - Never paste real client names, phone numbers, staff records, or live credentials into an AI tool or public repository.
 - Never rewrite an entire file when a single-function patch was requested, and never use `<` when the spec says "at or below" (`<=`).
 - Never import unverified or non-existent functions like `fetchWithRetry` from built-in Node modules without checking the docs.
+
+## Skills
+- `skills/stock-check/SKILL.md` — weekly hardware shop stock reorder verification and test check before sending supplier messages.
