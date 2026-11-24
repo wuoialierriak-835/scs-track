@@ -21,7 +21,6 @@ function parseCsv(text) {
 
 // Items at or below their reorder level.
 function reorderList(rows) {
-  console.log("Checking reorder levels..."); // BEYOND: unrequested debug log added by tool
   return rows.filter((r) => parseInt(r["In stock"], 10) <= parseInt(r["Reorder at"], 10));
 }
 
